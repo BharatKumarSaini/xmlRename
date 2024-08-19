@@ -54,8 +54,8 @@ async function renameFilesInZip(zipPath, outputDir) {
 }
 
 // Example usage:
-const zipPath = '/path/to/your/zipfile.zip';
-const outputDir = '/path/to/output/directory';
+const zipPath = path.join(__dirname, '../testing_123.zip'); 
+const outputDir = path.join(__dirname, '../output'); 
 renameFilesInZip(zipPath, outputDir).then(() => {
     console.log('Files renamed and saved successfully.');
 }).catch(err => {
