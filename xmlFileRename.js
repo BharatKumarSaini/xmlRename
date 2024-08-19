@@ -33,7 +33,7 @@ async function renameFilesInZip(zipPath, outputDir) {
 
             // Determine the new file name
             let newFileName;
-            if (filename.includes('_PLACEMENT_SCHEMATICS_')) {
+            if (filename.includes('PLACEMENT_SCHEMATICS')) {
                 newFileName = `${newName}_PLACEMENTS_SCHEMATICS.xml`;
             } else {
                 newFileName = `${newName}.xml`;
